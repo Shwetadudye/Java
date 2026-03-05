@@ -34,7 +34,7 @@ package basic;
 //	    System.out.println(c);
 //	   }
 //   }
-
+// Robust means secure
 
 //  Conditional statement 
 //
@@ -63,27 +63,160 @@ package basic;
 
    // Arithmatic operators  + , - ,* ,/, %
 
-     public class basic {
-    	public static void main(String[] args) {
-    	int price = 250;
-    	int tickets = 3;
-    	
-    	
-    	int total = price* tickets;
-    	int add = price+ tickets;
-    	int sub = price - tickets;
-    	int div = price / tickets;
-    	int mod = price % tickets;
-    	
-    	
-    	
-    	System.out.println("Total of your ticket "+ total);
-    	System.out.println("Addition " + add);
-    	System.out.println("Sub " + sub);
-    	System.out.println("div " + div);
-    	System.out.println("mod " + mod);
-    	
-    	}
-    	
-     }
+//     public class basic {
+//    	public static void main(String[] args) {
+//    	int price = 250;
+//    	int tickets = 3;
+//    	
+//    	
+//    	int total = price* tickets;
+//    	int add = price+ tickets;
+//    	int sub = price - tickets;
+//    	int div = price / tickets;
+//    	int mod = price % tickets;
+//    	
+//    	
+//    	
+//    	System.out.println("Total of your ticket "+ total);
+//    	System.out.println("Addition " + add);
+//    	System.out.println("Sub " + sub);
+//    	System.out.println("div " + div);
+//    	System.out.println("mod " + mod);
+//    	
+//    	}
+//    	
+//     }
+     // Relational Operators (==,!=, < ,> ,>= ,<=)
+
+//     public class basic {
+//    	public static void main(String[] args) {
+//    	   	int a = 10;
+//    	   	int b = 20 ;
+//    	   	
+//    	   	System.out.println(a==b);
+//    	   	System.out.println(a!=b);
+//    	   	System.out.println(a<b);
+//    	   	System.out.println(a>b);
+//    	   	System.out.println(a>=b);
+//    	   	System.out.println(a<=b);
+//    	}
+//     }
+     // Logical Operators (And , Or , Not)
      
+     
+     
+     // Ternary Operators 
+  
+
+//public class basic {
+//    public static void main(String[] args) {
+//    	 int age = 10;
+//    	 
+//    	 String result = (age>=18) ? "Adult" : "Minor";
+//    	 System.out.println(result);
+//    	 
+//    }
+//}
+
+       // Switch case 
+//
+//   public class basic{
+//	   public static void main(String[] args) {
+//		   
+//		   int day = 78;
+//		   
+//		   switch(day){
+//		   case 1:
+//			   System.out.println("Monday");
+//			   break;
+//		   case 2:
+//			   System.out.println("Tuesday");
+//			   break;
+//		   case 3 :
+//			   System.out.println("Wenesday");
+//			   break;
+//		   case 4:
+//			   System.out.println("Tuesday");
+//			   break;
+//		   case 5:
+//			   System.out.println("Friday");
+//			   break;
+//		   case 6:
+//			   System.out.println("Saturday");
+//			   break;
+//		   case 7:
+//			   System.out.println("Sunday");
+//			   break;
+//		   default :
+//			   System.out.println("Please enter 1 to 7");
+//			   break;
+//		   }
+//	   }
+//   }
+
+//   Array  = 1 d array and 2d array 
+
+// public class basic {
+//	 public static void main(String[] args) {
+//		 // 1d array 
+//		 
+////		 int arr[] = {10, 20, 30 , 45, 67};
+////		 
+////		 System.out.println("Index 2 value " + arr[2]);
+////		 
+////		 // for each 
+////		 
+////		 for(int array:arr) {
+////			System.out.println(array);
+//			 
+//		// 2D array 
+//			 int[][]matrix = { {10,3},
+//					 {4,5}};
+//			 
+//			 for(int i= 0 ; i<matrix.length;i++) { // rows
+//				 for(int j= 0; j<matrix.length;j++) { //columns
+//					 System.out.println(matrix[i][j] + "");
+//					 
+//				 }
+//				 System.out.println();
+//			 }
+//		 }
+//	 }
+  //  Do While loop 
+ 
+//      public class basic {
+//    	  public static void main(String[] args) {
+//    		  int i = 1 ;
+//    		  
+//    		  do {
+//    			  System.out.println(i);
+//    		  }while(i<=5);
+//    	  }
+//      }
+
+// Break
+//     public class basic {
+//    	 public static void main(String[] args) {
+//    		 
+//    		 for (int i=1;i<=10;i++) {
+//    			 if(i==5) {
+//    				 System.out.println(i);
+//    				 break;
+//    			 }
+//    			 System.out.println(i);
+//    		 }
+//    	 }
+//     }
+
+     // Continue
+
+public class basic{
+	public static void main(String[] args) {
+		for(int i = 1;i<=5;i++) {
+			if(i==3) {
+				continue;
+			}
+			System.out.println(i);
+		}
+	}
+}
