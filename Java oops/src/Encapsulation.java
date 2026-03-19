@@ -1,4 +1,3 @@
-
 // encapsulation : private data
 //we can get data by getter setter method
 //this keyword
