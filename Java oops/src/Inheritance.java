@@ -30,8 +30,5 @@ public class Inheritance {
         c1.performance();
         c2.SpeedMove();
         c2.performance();
-
-
-
     }
 }
