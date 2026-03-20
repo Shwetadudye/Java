@@ -1,27 +1,55 @@
-//method overloading : Allows a class to have multiple methods with the same name but different parameter list .
-// method overriding : Allows a subclass to provide a specific implementation of a method that is already provided by its parents
+//method overloading(run time ): Allows a class to have multiple methods with the same name but different parameter list .
+// method overriding (Compile time): Allows a subclass to provide a specific implementation of a method that is already provided by its parents
 
-class Mathematical_Operation{
+//class Mathematical_Operation{
+//
+//    // Method Overloading
+//    public int Add(int a, int b){
+//        return a+b;
+//    }
+//    public int Add(int a,int b, int c){
+//        return a+b+c;
+//    }
+//    public double Add(double a, double b){
+//        return a+b;
+//    }
+//}
+//
+//
+//public class Polymorphism {
+//    public static void main(String[] args){
+//     Mathematical_Operation M1 = new Mathematical_Operation();
+//     System.out.println("First " + M1.Add(20,30));
+//     System.out.println("Second" + M1.Add(20,39,90));
+//     System.out.println("Third " + M1.Add(7.33,999));
+//
+//    }
+//}
 
-    // Method Overloading
-    public int Add(int a, int b){
-        return a+b;
-    }
-    public int Add(int a,int b, int c){
-        return a+b+c;
-    }
-    public double Add(double a, double b){
-        return a+b;
+// method Overriding parent -> child
+
+
+class customer{
+    void Income(){
+        System.out.println("Customer 1");
     }
 }
 
+class Department extends customer{
+    void Income(){
+        System.out.println("Department");
+    }
+}
 
-public class Polymorphism {
+class Employee extends  customer{
+    void Income() {
+        System.out.println("Employee");
+    }
+}
+
+public  class Polymorphism {
     public static void main(String[] args){
-     Mathematical_Operation M1 = new Mathematical_Operation();
-     System.out.println("First " + M1.Add(20,30));
-     System.out.println("Second" + M1.Add(20,39,90));
-     System.out.println("Third " + M1.Add(7.33,999));
-
+        Employee e = new Employee();
+        e.Income();
     }
 }
