@@ -53,3 +53,18 @@ public class Abstraction {
         b.talk();
     }
 }
+//collection
+//mutable class immutable
+//type casting
+//variable , scope of variables
+//datatypes
+//conditional statement
+// operator
+//loops
+//array- 1d array , 2d array
+// oops
+//constructor
+//static keyword
+//exception handling ..try catch ... throw and throws
+// Date time API
+

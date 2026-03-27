@@ -1,5 +1,5 @@
-//method overloading(run time ): Allows a class to have multiple methods with the same name but different parameter list .
-// method overriding (Compile time): Allows a subclass to provide a specific implementation of a method that is already provided by its parents
+//method overloading(Compile time ): Allows a class to have multiple methods with the same name but different parameter list .
+// method overriding (Run time): Allows a subclass to provide a specific implementation of a method that is already provided by its parents
 
 //class Mathematical_Operation{
 //
