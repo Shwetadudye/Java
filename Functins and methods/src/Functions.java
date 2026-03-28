@@ -1,17 +1,27 @@
 import java.util.Scanner;
 public class Functions {
     public static void main(String[] args){
-        sum();
-        sum();
+//        sum();
+//        sum();
+
+        int ans = sum(29,13);
+        System.out.println(ans);
 
     }
-    static  void sum() {
-        Scanner input = new Scanner(System.in);
-        System.out.print("Enter num1 :");
-        int num1 = input.nextInt();
-        System.out.print("Enter num2 :");
-        int num2 = input.nextInt();
-        int sum = num1+ num2;
-        System.out.println("Sum " + sum);
+    // method 1
+//    static  void sum() {
+//        Scanner input = new Scanner(System.in);
+//        System.out.print("Enter num1 :");
+//        int num1 = input.nextInt();
+//        System.out.print("Enter num2 :");
+//        int num2 = input.nextInt();
+//        int sum = num1+ num2;
+//        System.out.println("Sum " + sum);
+//    }
+    // method 2 (Argument type)
+
+    static int sum(int a , int b){
+        int sum= a+b;
+       return sum;
     }
 }
