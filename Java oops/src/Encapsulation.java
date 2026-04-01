@@ -46,5 +46,6 @@ public class Encapsulation {
             System.out.println("Id" + s1.getId());
             System.out.println("Salary " + s1.getSalary());
 
+
     }
 }
