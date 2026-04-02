@@ -2,6 +2,7 @@ import java.sql.ClientInfoStatus;
 import java.util.Collection;
 import java.util.List;
 import java.util.Arrays;
+import java.util.Optional;
 import java.util.stream.*;
 
 public class Streamapi {
@@ -21,17 +22,32 @@ public class Streamapi {
          // reduce method
 //        int sum = list.stream().reduce(0,(a,b)-> a+b);
 //        System.out.println("sum : " + sum);
+//
+//        list.stream().peek(n->System.out.println("before" + n))
+//                     .map(n->n*2).peek(n->System.out.println("After" + n))
+//                     .collect(Collectors.toList());
+//
+//        long count = list.stream().count();
+//        System.out.println("Count" + count);
+//
+//        int sum = list.stream().mapToInt(n->n).sum();
+//        System.out.println(sum);
 
-        list.stream().peek(n->System.out.println("before" + n))
-                     .map(n->n*2).peek(n->System.out.println("After" + n))
-                     .collect(Collectors.toList());
+        // find first
+        Optional<Integer> first = list.stream().findFirst();
+        System.out.println("First Element " +first.get());
 
-        long count = list.stream().count();
-        System.out.println("Count" + count);
+        // find any
+        Optional <Integer> findany = list.stream().findAny();
+        System.out.println("find any element " +findany);
 
-        int sum = list.stream().mapToInt(n->n).sum();
-        System.out.println(sum);
+        // Anymatch
+        boolean iseven =  list.stream().anyMatch(n->n%2==0);
+        System.out.println("Is even : " +iseven);
 
+        // All Match
+        boolean isodd = list.stream().allMatch(n->n%2==1);
+        System.out.println(isodd);
 
     }
 }
