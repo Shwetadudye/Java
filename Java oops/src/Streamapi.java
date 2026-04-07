@@ -8,7 +8,7 @@ import java.util.stream.*;
 public class Streamapi {
     public static void main(String[] args){
 //        List <Integer> list = Arrays.asList(23,10,30,6,12,20); //   12,20,23,30
-        List <Integer> list = Arrays.asList(1,2,6,4,5);
+         List <Integer> list = Arrays.asList(1,2,6,4,5);
 
       //   list.stream().forEach(System.out :: println );
         // filter method
@@ -48,6 +48,5 @@ public class Streamapi {
         // All Match
         boolean isodd = list.stream().allMatch(n->n%2==1);
         System.out.println(isodd);
-
     }
 }
