@@ -8,7 +8,7 @@ public class NestedSwitch {
         String Department = in.next();
 
         switch (EmployeeID) {
-            case 1 -> System.out.println("Hello Omkar");
+            case 1 -> System.out.println("Hello Omkar"); // lambda expression
             case 2 -> System.out.println("Hello Shweta");
             case 3 -> {
                 switch (Department) {
